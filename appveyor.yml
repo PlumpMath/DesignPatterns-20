@@ -19,5 +19,5 @@ after_build:
 clone_depth: 1
 test:
   assemblies:
-    - 'C:/projects/DesignPatterns/SimpleFactoryTests/bin/Release/SimpleFactoryTests.dll'
+  - 'C:/projects/DesignPatterns/SimpleFactoryTests/bin/Release/SimpleFactoryTests.dll'
 deploy: off
