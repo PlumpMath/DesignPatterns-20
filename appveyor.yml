@@ -1,0 +1,22 @@
+configuration: Release
+init:
+  - git config --global core.autocrlf true
+before_build:
+  - set PATH=C:\Program Files (x86)\MSBuild\14.0\Bin;%PATH%
+  - nuget restore
+build_script:
+  - build.cmd 
+after_build:
+  - ps: Write-Host "build DONE,Start UnitTest"
+  - ps: Write-Host "当前目录下的文件："
+  - cmd: dir /a *
+  - cmd: cd C:/projects/DesignPatterns/SimpleFactory/bin
+  - cmd: dir /a *
+  - cmd: cd C:/projects/DesignPatterns/SimpleFactoryTests/bin/Release
+  - cmd: dir /a *
+  - xunit.console C:/projects/DesignPatterns/SimpleFactoryTests/bin/Release/DesignPatternsTests.dll
+clone_depth: 1
+test:
+  assemblies:
+    - '**\*.DesignPatterns.dll'
+deploy: off
