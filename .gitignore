@@ -1,2 +1,6 @@
 SimpleFactory/bin/
 SimpleFactory/obj/
+*.scgdat
+SimpleFactoryTests/bin/
+SimpleFactoryTests/obj/
+packages/
