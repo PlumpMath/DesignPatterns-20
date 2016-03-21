@@ -1,0 +1,6 @@
+D:\代码\DesignPatterns\SimpleFactory\bin\Debug\SimpleFactory.exe.config
+D:\代码\DesignPatterns\SimpleFactory\bin\Debug\SimpleFactory.exe
+D:\代码\DesignPatterns\SimpleFactory\bin\Debug\SimpleFactory.pdb
+D:\代码\DesignPatterns\SimpleFactory\obj\Debug\SimpleFactory.csprojResolveAssemblyReference.cache
+D:\代码\DesignPatterns\SimpleFactory\obj\Debug\SimpleFactory.exe
+D:\代码\DesignPatterns\SimpleFactory\obj\Debug\SimpleFactory.pdb
