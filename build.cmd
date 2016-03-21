@@ -17,4 +17,4 @@ copy %CACHED_NUGET% .nuget\nuget.exe > nul
 :restore
 IF EXIST build goto run
 
-msbuild "FileUpload.sln" /verbosity:minimal
+msbuild "DesignPatterns.sln" /verbosity:minimal
