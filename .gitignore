@@ -4,3 +4,7 @@ SimpleFactory/obj/
 SimpleFactoryTests/bin/
 SimpleFactoryTests/obj/
 packages/
+StrategyPattern/bin/
+StrategyPattern/obj/
+StrategyPatternTests/bin/
+StrategyPatternTests/obj/

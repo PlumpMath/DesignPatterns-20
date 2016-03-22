@@ -20,4 +20,5 @@ clone_depth: 1
 test:
   assemblies:
   - SimpleFactoryTests.dll
+  - StrategyPatternTests.dll
 deploy: off

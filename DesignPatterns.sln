@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "SimpleFact
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactoryTests", "SimpleFactoryTests\SimpleFactoryTests.csproj", "{6D1B5D7F-69CE-4CE2-9477-3AF50E8BA105}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern", "StrategyPattern\StrategyPattern.csproj", "{47436DE8-2FFF-4E5E-9743-B3EB1E449FA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPatternTests", "StrategyPatternTests\StrategyPatternTests.csproj", "{E444B6C5-E54A-46AD-8955-8D01843DE451}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{6D1B5D7F-69CE-4CE2-9477-3AF50E8BA105}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D1B5D7F-69CE-4CE2-9477-3AF50E8BA105}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D1B5D7F-69CE-4CE2-9477-3AF50E8BA105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47436DE8-2FFF-4E5E-9743-B3EB1E449FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47436DE8-2FFF-4E5E-9743-B3EB1E449FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47436DE8-2FFF-4E5E-9743-B3EB1E449FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47436DE8-2FFF-4E5E-9743-B3EB1E449FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E444B6C5-E54A-46AD-8955-8D01843DE451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E444B6C5-E54A-46AD-8955-8D01843DE451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E444B6C5-E54A-46AD-8955-8D01843DE451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E444B6C5-E54A-46AD-8955-8D01843DE451}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
