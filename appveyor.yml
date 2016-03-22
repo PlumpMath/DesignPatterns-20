@@ -15,9 +15,9 @@ after_build:
   - cmd: dir /a *
   - cmd: cd C:/projects/DesignPatterns/SimpleFactoryTests/bin/Release
   - cmd: dir /a *
-  # - xunit.console C:/projects/DesignPatterns/SimpleFactoryTests/bin/Release/SimpleFactoryTests.dll
+  - xunit.console.clr4 C:/projects/DesignPatterns/SimpleFactoryTests/bin/Release/SimpleFactoryTests.dll /appveyor
 clone_depth: 1
 test:
   assemblies:
-  - 'C:/projects/DesignPatterns/SimpleFactoryTests/bin/Release/SimpleFactoryTests.dll'
+  - SimpleFactoryTests.dll
 deploy: off
