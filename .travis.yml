@@ -1,0 +1,17 @@
+language: csharp
+sudo: required
+dist: trusty
+solution: ./DesignPatterns.sln
+mono:
+  - latest
+os:
+  - linux
+  - osx
+osx_image: xcode7.1
+install:
+  - nuget restore ./DesignPatterns.sln
+  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release ./DesignPatterns.sln
+  - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./SimpleFactoryTests/bin/Release/SimpleFactoryTests.dll
+  - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./StrategyPatternTests/bin/Release/StrategyPatternTests.dll
