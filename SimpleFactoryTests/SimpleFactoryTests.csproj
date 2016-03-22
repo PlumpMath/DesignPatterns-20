@@ -4,15 +4,15 @@
   <Import Project="..\packages\xunit.core.2.0.0\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.0.0\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.core.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Target Name="Build">
-  <MSBuild Projects="DesignPatterns.sln" Targets="Build" Properties="Configuration=Release"> 
-  </MSBuild> 
-  <xunit Assembly="SimpleFactoryTests\bin\Release\SimpleFactoryTests.dll" />
+    <MSBuild Projects="DesignPatterns.sln" Targets="Build" Properties="Configuration=Release">
+    </MSBuild>
+    <xunit Assembly="SimpleFactoryTests\bin\Release\SimpleFactoryTests.dll" />
   </Target>
   <Target Name="Test">
-  <ItemGroup>
-    <TestAssemblies Include="**\SimpleFactoryTests\bin\Release\SimpleFactoryTests.dll"/>
-  </ItemGroup>
-  <xunit Assemblies="@(TestAssemblies)"/>
+    <ItemGroup>
+      <TestAssemblies Include="**\SimpleFactoryTests\bin\Release\SimpleFactoryTests.dll" />
+    </ItemGroup>
+    <xunit Assemblies="@(TestAssemblies)" />
   </Target>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -97,7 +97,9 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\xunit.core.2.0.0\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.0.0\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.core.props'))" />
     <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.0.1\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.0.1\build\net20\xunit.runner.visualstudio.props'))" />
+    <Error Condition="!Exists('..\packages\xunit.MSBuild.2.0.0.0\build\xunit.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.MSBuild.2.0.0.0\build\xunit.MSBuild.targets'))" />
   </Target>
+  <Import Project="..\packages\xunit.MSBuild.2.0.0.0\build\xunit.MSBuild.targets" Condition="Exists('..\packages\xunit.MSBuild.2.0.0.0\build\xunit.MSBuild.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
