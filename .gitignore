@@ -8,3 +8,6 @@ StrategyPattern/bin/
 StrategyPattern/obj/
 StrategyPatternTests/bin/
 StrategyPatternTests/obj/
+.vs/DesignPatterns/v14/.suo
+/DecoratorPattern/bin/Debug
+/DecoratorPattern/obj/Debug
