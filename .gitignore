@@ -23,3 +23,5 @@ TemplatePattern/bin/
 TemplatePattern/obj/
 FacadePattern/bin/
 FacadePattern/obj/
+BuilderPattern/bin/
+BuilderPattern/obj/
