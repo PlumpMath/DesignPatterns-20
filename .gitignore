@@ -28,3 +28,5 @@ BuilderPattern/obj/
 *.Cache
 ObserverPattern/bin/
 ObserverPattern/obj/
+ObserverPatternByEventHandler/bin/
+ObserverPatternByEventHandler/obj/
