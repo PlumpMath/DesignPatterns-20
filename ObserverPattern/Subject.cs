@@ -8,14 +8,14 @@ namespace ObserverPattern
 {
     public abstract class Subject
     {
-        private IList<Observer> observers=new List<Observer>();
+        private IList<IObserver> observers=new List<IObserver>();
 
-        public void Attach(Observer o)
+        public void Attach(IObserver o)
         {
             observers.Add(o);
         }
 
-        public void Detach(Observer o)
+        public void Detach(IObserver o)
         {
             observers.Remove(o);
         }

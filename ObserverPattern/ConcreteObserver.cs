@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ObserverPattern
 {
-    public class ConcreteObserver : Observer
+    public class ConcreteObserver : IObserver
     {
         private string _name;
         private string _observerState;
@@ -25,8 +25,8 @@ namespace ObserverPattern
             this._name = name;
         }
 
-
-        public override void Update()
+        
+        public void Update()
         {
             _observerState = _subject.SubjectState;
             Console.WriteLine($"观察者{_name}的新状态是{_observerState}");
