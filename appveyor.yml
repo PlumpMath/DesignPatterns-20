@@ -6,7 +6,6 @@ before_build:
   - nuget restore
 build_script:
   - msbuild "DesignPatterns.sln" /verbosity:minimal
-  # - build.cmd 
 after_build:
   - ps: Write-Host "build DONE,Start UnitTest"
   - ps: Write-Host "当前目录下的文件："
