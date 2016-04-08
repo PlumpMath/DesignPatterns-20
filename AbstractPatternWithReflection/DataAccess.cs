@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace AbstractPatternWithReflection
 {
@@ -11,7 +12,7 @@ namespace AbstractPatternWithReflection
     {
         private static readonly string AssemblyName = "AbstractPatternWithReflection";
         //private static readonly string db = "Sqlserver";
-        private static readonly string db = "Access";
+        private static readonly string db = ConfigurationManager.AppSettings["DB"];
 
         public static IUser CreateUser()
         {
