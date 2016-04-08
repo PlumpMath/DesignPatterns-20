@@ -32,3 +32,5 @@ ObserverPatternByEventHandler/bin/
 ObserverPatternByEventHandler/obj/
 AbstractPattern/bin/
 AbstractPattern/obj/
+AbstractPatternWithReflection/bin/
+AbstractPatternWithReflection/obj/
