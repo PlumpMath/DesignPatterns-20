@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AccessFactory.cs" />
     <Compile Include="AccessUser.cs" />
+    <Compile Include="DataAccess.cs" />
     <Compile Include="IFactory.cs" />
     <Compile Include="IUser.cs" />
     <Compile Include="Program.cs" />

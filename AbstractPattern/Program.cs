@@ -11,10 +11,12 @@ namespace AbstractPattern
         static void Main(string[] args)
         {
             User u=new User();
-            IFactory factory=new SqlServerFactory();
-            IUser iu = factory.CreaUser();
+            //IFactory factory=new SqlServerFactory();
+            IUser iu = DataAccess.CreateUser();
+
             iu.GetUser(1);
-            iu.Insert(new User() );
+            iu.Insert(new User());
+
             Console.ReadKey();
         }
     }
