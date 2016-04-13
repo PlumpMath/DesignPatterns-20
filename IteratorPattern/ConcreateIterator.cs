@@ -12,7 +12,7 @@ namespace IteratorPattern
     class ConcreateIterator:Iterator
     {
         private ConcreateAggregate _aggregate;
-        private int current = 0;
+        private int _current = 0;
 
         /// <summary>
         /// 初始化迭代器
@@ -30,10 +30,10 @@ namespace IteratorPattern
         public override object Next()
         {
             //object ret = null;
-            current++;
-            if (current < _aggregate.Count)
+            _current++;
+            if (_current < _aggregate.Count)
             {
-                return _aggregate[current];
+                return _aggregate[_current];
             }
             else
             {
@@ -44,12 +44,12 @@ namespace IteratorPattern
 
         public override bool IsDone()
         {
-            return current >= _aggregate.Count ? true : false;
+            return _current >= _aggregate.Count ? true : false;
         }
 
         public override object CurrentItem()
         {
-            return _aggregate[current];
+            return _aggregate[_current];
         }
     }
 }

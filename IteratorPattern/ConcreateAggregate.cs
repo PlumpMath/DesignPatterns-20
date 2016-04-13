@@ -13,15 +13,6 @@ namespace IteratorPattern
         private IList<object> items = new List<object>();
 
         /// <summary>
-        /// 返回特定的迭代器
-        /// </summary>
-        /// <returns></returns>
-        public override Iterator CreateIterator()
-        {
-            return new ConcreateIterator(this);
-        }
-
-        /// <summary>
         /// 集合的元素个数
         /// </summary>
         public int Count
@@ -31,6 +22,7 @@ namespace IteratorPattern
                 return items.Count;
             }
         }
+
         /// <summary>
         /// 索引器
         /// </summary>
@@ -41,6 +33,14 @@ namespace IteratorPattern
             get { return items[index]; }
             set { items.Insert(index, value); }
         }
-        
+
+        /// <summary>
+        /// 返回特定的迭代器
+        /// </summary>
+        /// <returns></returns>
+        public override Iterator CreateIterator()
+        {
+            return new ConcreateIterator(this);
+        }
     }
 }
