@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern", "CommandPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilityPattern", "ChainOfResponsibilityPattern\ChainOfResponsibilityPattern.csproj", "{860A5EBF-9067-4CCF-83DC-B7E9B38C628B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorPattern", "MediatorPattern\MediatorPattern.csproj", "{F81567BB-EE2A-4FF3-83D5-7B30CC8F3173}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{860A5EBF-9067-4CCF-83DC-B7E9B38C628B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{860A5EBF-9067-4CCF-83DC-B7E9B38C628B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{860A5EBF-9067-4CCF-83DC-B7E9B38C628B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F81567BB-EE2A-4FF3-83D5-7B30CC8F3173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81567BB-EE2A-4FF3-83D5-7B30CC8F3173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81567BB-EE2A-4FF3-83D5-7B30CC8F3173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81567BB-EE2A-4FF3-83D5-7B30CC8F3173}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
