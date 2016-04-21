@@ -36,3 +36,4 @@ AbstractPatternWithReflection/bin/
 AbstractPatternWithReflection/obj/
 */bin/
 */obj/
+*.coverage
